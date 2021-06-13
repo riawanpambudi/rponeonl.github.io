@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/homerponeonl/public_html/
+    - /bin/cp -R application $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R system $DEPLOYPATH
+    - /bin/cp -R user_guide $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp contributing.md $DEPLOYPATH
+    - /bin/cp db_helpdesk.sql $DEPLOYPATH
+    - /bin/cp cindex.php $DEPLOYPATH
+    - /bin/cp license.txt $DEPLOYPATH
+    - /bin/cp readme.rst $DEPLOYPATH
